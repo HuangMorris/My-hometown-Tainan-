@@ -2,20 +2,136 @@
 <html>
 <head>
     <metal charset="utf-8"></metal>
-    <title>黃詠涒Morris</title>
+    <title>黃詠涒的自我介紹</title>
+    <style type="text/css">
+    /* text-align:center文字到中央，padding可設定文字到框的距離 */
+    .head{
+        background-color:#003344;color:white;font-weight:bold;font-size:30px;
+        text-align:center;padding:10px
+    }
+    /* 展示用border:1px solid red;height:100px */
+    div.demo{
+        width:1000px;margin-left:auto;margin-right:auto;
+    }
+    /*顯示模式display:inline-block左右並排，垂直對其上方
+    line-height指行高
+    */
+    .box{
+        width:280px;padding:10px;margin:10px;background-color:white;
+        display:inline-block;vertical-align:top;
+        text-align:center;height:150px;line-height:30px;
+    }
+    /* 標籤名稱選擇棄 */
+    body{
+        font-size:16px;font-family:"微軟正黑體"
+    }
+    h3{
+        font-size:24px;text-decoration:underline;
+    }
+    /* class選擇器 */
+    .title{font-weight:bold;font-size:20px}
+    div.content{width:400px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px}
+    .keyword{color:red}
+    /* absolute絕對定位、relative相對定位(小範圍) */
+
+    /* 暫時封存.box{position:relative;left:400px;top:0px;width:100px;height:100px;background-color:green} */
+    
+    /* id選擇器 */
+    #btn{
+        border:1px solid #888888
+        background-color#ffffff;padding:3px;
+    }
+    /*=虛擬選擇器:搭配其他選擇器使用  */
+    /* :hover當滑鼠一味上去時 */
+    #btn:hover{
+        background-color:#ffffff
+    }
+    /* :focus當目標取得焦點時，套用一組設定 !還未成功!*/
+    input:focus{
+        border:5px solid #7bff00;
+    }
+    /* 階層是選擇器:搭配其他選擇器使用 */
+    ul.video a{
+      color:#ff00aa
+    }
+    .demo a{
+      color:#3700ff
+    }
+    /* collapse為崩塌之意，單線 */
+    table{
+        width:400px;border:1px solid #888888;
+        border-collapse:collapse;
+    }
+    /*border-bottom代表只設定下面 padding讓格子與格子內的文字拉出10個像素 */
+    td{
+        border-bottom:1px solid #888888;padding:10px;
+    }
+    /* 表格中第一對tr */
+    tr:nth-child(1){
+        background-color:#7788aa;color:#ffffff;
+    }
+    /* 表格中的偶數對 */
+    tr:nth-child(even){
+        background-color:#e8e8e8
+    }
+    </style>
 </head>
-<body>
+<!-- margin:0px 讓文字框框貼齊網頁 -->
+<body style="margin:0px;background-color:#eeeeee;">
+<div class="head">黃詠涒的自我介紹</div>
+<div class="demo">
+    <div class="box">
+        <div class="title">我的基本資料</div>
+        <div>男姓、雙魚座、A型</div>
+        <div>來自台南市善化區</div>
+        <div>熱愛台灣</div>
+    </div>
+
+    <div class="box">
+        <div class="title">我的興趣及嗜好</div>
+        <div>拍照片、彈鋼琴</div>
+        <div>打籃球、關心時事</div>
+        <div>和狗、貓玩</div>
+    </div>
+
+    <div class="box">
+        <div class="title">歡迎與我聯絡</div>
+
+</div>
+    <!-- "font-weight:bold字體粗;font-size:20px字體大小" -->
+    <h3 class="title">被功課與報告追趕的台灣學生</h3>
+    <!--用div會斷行，可改用span -->
+    <!--"margin-top:10px;margin-bottom:10px"margin代表兩個區塊的距離  -->
+    <!-- 區塊的邊框用border，寬度(1px)、樣式(solid單實線)(dashed虛線)、顏色 -->
+    <!-- padding:10px文字和邊框的距離 -->
+    <!-- width:400px標籤的寬度 -->
+    <!-- br/可做主動斷行 -->
+    <div class="content">
+        我是<span class="keyword">台南人</span>。<br/>
+        從小在都市長大。</div>
+
+    <!-- 暫時封存<div class="box"></div>     -->
+
+        <div class="title">均一高中的報告很多</div>
+        <div class="content">
+           當代藝術、英文報告、<span class="keyword">自主學習</span>等，對學生<span style="position:relative;top:-5px">2</span>造成的壓力不小。
+        </div>
     <h3>我的照片My Picture</h3>
-    <img src="Me.jpg"width="200"/>  
+    <img src="G11.jpg"width="300"/>
     <hr/>
-    <h3>關於我</h3>  
-    <ul>
+    <h3>我的影片</h3>  
+    <ul class="video">
         <li><a href="https://youtu.be/AWwYq_kqlR8">生活科技課拍的短片</a></li>
         <li><a href="https://youtu.be/jrq3B7OClkk">自製的火箭影片</a></li>
-        <li><a href="https://www.instagram.com/morris00577/?hl=zh-tw">Instagram</a></li>
+        <li><a href="https://www.youtube.com/watch?v=e1Noq8N7SWU">攝影課創意廣告</a></li>
     </ul>
+    <h3>我的IG</h3>
+    <ul class="demo">
+        <li><a href="https://www.instagram.com/morris00577/?hl=zh-tw">Instagram</a></li>
+    </ul>  
     <h3>MLB BaseBall</h3>
-    <table border="1" width="400" cellpadding="5">
+    <!-- border="1" width="400" cellpadding="5" -->
+    <table>
         <tr>
             <td>Name</td>
             <td>Win</td>
@@ -32,5 +148,10 @@
             <td>8</td>
         </tr>
     </table>
+    <h3>和我連絡</h3>
+    <div class="content">
+        填寫訊息 <input type="text" /> <button id="btn">送出</button>
+    </div>
+    
 </body>
 </html>
