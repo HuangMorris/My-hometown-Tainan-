@@ -40,24 +40,13 @@ result=data*data
 // alert(result);
  </script>
     <style type="text/css">
-    /* 螢幕尺寸最大值為1200px，也就是小於1200px*/
-    @media (max-width:1200px){
-        main>.item{
-            width:45%;
-        }
-    }
-    @media (max-width:500px){
-        main>.item{
-            width:90%;
-        }
-    }
     /* text-align:center文字到中央，padding可設定文字到框的距離 */
     .head{
         background-color:#003344;color:white;font-weight:bold;font-size:30px;
         text-align:center;padding:10px
     }
     /* 展示用border:1px solid red;height:100px */
-    div.demo{
+    div.demo{    
         width:1000px;margin-left:auto;margin-right:auto;
     }
     /*顯示模式display:inline-block左右並排，垂直對其上方
@@ -72,7 +61,7 @@ result=data*data
     /* 手機寬度約320~400px，把主要的底板設成100% */
     @media screen and (max-width:600px){
         .head{font-size:24px;}
-        div.demo{width:100%;text-align:flex-start;}
+        div.demo{width:100%;text-align:center;}
     }
     /* 標籤名稱選擇棄 */
     body{
@@ -84,7 +73,10 @@ result=data*data
     }
     /* class選擇器 */
     .title{font-weight:bold;font-size:20px}
-    div.content{width:280px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px;}
+    div.content{
+        
+        width:100%;text-align:center;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px;
+    }
     .keyword{color:red}
     /* absolute絕對定位、relative相對定位(小範圍) */
 
@@ -92,6 +84,7 @@ result=data*data
     
     /* id選擇器 */
     #btn{
+        text-align:center;
         border:1px solid #888888
         background-color#ffffff;padding:3px;
     }
@@ -113,6 +106,7 @@ result=data*data
     }
     /* collapse為崩塌之意，單線 */
     table{
+        text-align:center;
         width:300px;border:1px solid #888888;
         border-collapse:collapse;
     }
