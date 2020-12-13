@@ -1,0 +1,40 @@
+      /* nav樣式設定 */
+nav{
+    display:flex;
+}
+nav>.logo{
+    /* flex:none;沒有彈性，固定尺寸 */
+    flex:auto;
+    justify-content:center;
+    background-color:#ffcccc;
+}
+nav>.menu{
+    /* flex:auto;盡量把容器的空間填滿 */
+    flex:auto;
+    justify-content:center;
+    background-color:#ccccff;
+}
+/* flex:none;width:100px; */
+nav>.user{
+    flex:auto;
+    justify-content:center;
+    background-color:#ccffcc;
+}
+/* main 樣式設定  */
+/* 容器 */
+/* justify-content:flex-start靠左，flex-end靠右((水平對齊)) */
+/* 垂直對齊align-items:flex-start靠上方,flex-end靠下方,stretch一起變,center靠中間 */
+/*容器中的項目有換行的現象flex-wrap:wrap;*/
+main{
+    display:flex;flex-wrap:wrap;
+    justify-content:center;
+    align-items:stretch;
+    background-color:#cccccc;
+}
+ /* 項目 */
+/* 固定尺寸 */
+main>.item{
+    flex:none;
+    width:220px;margin:10px;
+    background-color:hsl(184, 100%, 90%);
+}

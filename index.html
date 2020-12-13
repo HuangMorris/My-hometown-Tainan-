@@ -2,8 +2,55 @@
 <html>
 <head>
     <metal charset="utf-8"></metal>
-    <title>黃詠涒的自我介紹</title>
+    <!-- 希望手機的瀏覽器不要對網頁做任意地縮放，initial-scale縮放尺度固定1倍，最大縮放尺度也設為1倍，就是不縮放 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link href="style.css" rel="stylesheet" type="text/css" media="all" /> 
+    <title>認識黃詠涒</title>
+    <script type="text/javascript">
+        alert("想看我的網頁嗎?看一次10塊錢");
+    // alert("看一次10塊錢");
+    //單行註解ˋ
+    /*
+        多行註解
+    */
+   //資料
+   //變數，宣告用var，取名為x
+//    var x;
+//    x=15;
+//    alert(x);
+//    var y=true;
+   //運算子
+//    15+20;
+//    alert(15+20);
+//    var result=15-15;//將顯示0
+//    alert(result);
+//    result++;//加一，--減一
+//    alert(result);
+/*4>3;
+result=4==3(兩個等號是完全相等)
+alert(result);
+var data=3
+result=data*data
+*/
+   //範例
+//輸入:prompt(提示語，預設值) -> 程式運算 -> 輸出:alert(資料)
+// var n1=prompt("乘法練習:請輸入一個數字","1");
+// var n2=prompt("再輸入一個數字","1");
+// var result=n1*n2;
+// alert(result);
+ </script>
     <style type="text/css">
+    /* 螢幕尺寸最大值為1200px，也就是小於1200px*/
+    @media (max-width:1200px){
+        main>.item{
+            width:45%;
+        }
+    }
+    @media (max-width:500px){
+        main>.item{
+            width:90%;
+        }
+    }
     /* text-align:center文字到中央，padding可設定文字到框的距離 */
     .head{
         background-color:#003344;color:white;font-weight:bold;font-size:30px;
@@ -21,16 +68,22 @@
         display:inline-block;vertical-align:top;
         text-align:center;height:150px;line-height:30px;
     }
+    /* 當使用者的螢幕最大寬度小於600px時˙，套用此設定 */
+    /* 手機寬度約320~400px，把主要的底板設成100% */
+    @media screen and (max-width:600px){
+        .head{font-size:24px;}
+        div.demo{width:100%;text-align:center;}
+    }
     /* 標籤名稱選擇棄 */
     body{
         font-size:16px;font-family:"微軟正黑體"
     }
     h3{
-        font-size:24px;text-decoration:underline;
+        font-size:24px;text-decoration;
     }
     /* class選擇器 */
     .title{font-weight:bold;font-size:20px}
-    div.content{width:400px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px}
+    div.content{width:400px;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px;}
     .keyword{color:red}
     /* absolute絕對定位、relative相對定位(小範圍) */
 
@@ -46,7 +99,7 @@
     #btn:hover{
         background-color:#ffffff
     }
-    /* :focus當目標取得焦點時，套用一組設定 !還未成功!*/
+    /* :focus當目標取得焦點時，套用一組設定*/
     input:focus{
         border:5px solid #7bff00;
     }
@@ -96,8 +149,28 @@
 
     <div class="box">
         <div class="title">歡迎與我聯絡</div>
-
 </div>
+
+<nav>
+    <div class="logo">Logo</div>
+    <div class="menu">Menu</div>
+    <div class="user">User</div>
+</nav>
+<!-- Flex 如何解決:並排(切欄)、水平、垂直對其的問題 -->
+<!-- RWD回應式設計的關鍵動作:欄位變化
+        Flex如何控制欄位的變化?
+
+    規劃:
+        1200px以上的規劃:4個，固定尺寸
+        500px~1200px之間的變化:2欄，彈性尺寸
+        500px以下:1欄，彈性尺寸
+-->
+<main>
+    <div class="item">New 1<br/>台南有很多美食</div>
+    <div class="item">New 2</div>
+    <div class="item">New 3</div>
+    <div class="item">New 4</div>
+</main>
     <!-- "font-weight:bold字體粗;font-size:20px字體大小" -->
     <h3 class="title">被功課與報告追趕的台灣學生</h3>
     <!--用div會斷行，可改用span -->
@@ -112,7 +185,7 @@
 
     <!-- 暫時封存<div class="box"></div>     -->
 
-        <div class="title">均一高中的報告很多</div>
+        <h3>均一高中的報告很多</h3>
         <div class="content">
            當代藝術、英文報告、<span class="keyword">自主學習</span>等，對學生<span style="position:relative;top:-5px">2</span>造成的壓力不小。
         </div>
