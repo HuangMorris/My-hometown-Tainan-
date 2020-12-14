@@ -53,7 +53,7 @@ result=data*data
     line-height指行高
     */
     .box{
-        width:280px;padding:10px;margin:10px;background-color:white;
+        width:290px;padding:10px;margin:10px;background-color:white;
         display:inline-block;vertical-align:top;
         text-align:center;height:150px;line-height:30px;
     }
@@ -74,7 +74,6 @@ result=data*data
     /* class選擇器 */
     .title{font-weight:bold;font-size:20px}
     div.content{
-        
         width:100%;text-align:center;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px;
     }
     .keyword{color:red}
@@ -106,8 +105,8 @@ result=data*data
     }
     /* collapse為崩塌之意，單線 */
     table{
-        text-align:center;
-        width:300px;border:1px solid #888888;
+        width:100%;margin-left:auto;margin-right:auto;
+        border:1px solid #888888;
         border-collapse:collapse;
     }
     /*border-bottom代表只設定下面 padding讓格子與格子內的文字拉出10個像素 */
@@ -126,80 +125,105 @@ result=data*data
 </head>
 <!-- margin:0px 讓文字框框貼齊網頁 -->
 <body style="margin:0px;background-color:#eeeeee;">
-<div class="head">黃詠涒的自我介紹</div>
+    <div class="head">自我介紹</div>
+    <h3>我的照片</h3>
+    <div style=text-align:center;>
+        <img src="G11.jpg"width="300"/>
+    </div>
 <div class="demo">
     <div class="box">
-        <div class="title">我的基本資料</div>
-        <div>男姓、雙魚座、A型</div>
+        <div class="title">基本資料</div>
+        <div>姓名:黃詠涒</div>  
+        <div>家中成員:爸、媽、哥、4隻狗、3隻貓</div>
+        <div>16歲、雙魚座、A型</div>
         <div>來自台南市善化區</div>
-        <div>熱愛台灣</div>
     </div>
 
     <div class="box">
         <div class="title">我的興趣及嗜好</div>
-        <div>拍照片、彈鋼琴</div>
-        <div>打籃球、關心時事</div>
-        <div>和狗、貓玩</div>
+        <div>拍照、彈琴、打球、聽歌</div>
+        <div>跟狗、貓玩、觀察人事物</div>
+        <div>認識武器、關心時事</div>
     </div>
 
     <div class="box">
-        <div class="title">歡迎與我聯絡</div>
-</div>
-
-<nav>
-    <div class="logo">Logo</div>
-    <div class="menu">Menu</div>
-    <div class="user">User</div>
-</nav>
-<!-- Flex 如何解決:並排(切欄)、水平、垂直對其的問題 -->
-<!-- RWD回應式設計的關鍵動作:欄位變化
-        Flex如何控制欄位的變化?
-
-    規劃:
-        1200px以上的規劃:4個，固定尺寸
-        500px~1200px之間的變化:2欄，彈性尺寸
-        500px以下:1欄，彈性尺寸
--->
-<main>
-    <div class="item">New 1<br/>台南有很多美食</div>
-    <div class="item">New 2</div>
-    <div class="item">New 3</div>
-    <div class="item">New 4</div>
-</main>
-    <!-- "font-weight:bold字體粗;font-size:20px字體大小" -->
-    <h3 class="title">被功課與報告追趕的台灣學生</h3>
-    <!--用div會斷行，可改用span -->
-    <!--"margin-top:10px;margin-bottom:10px"margin代表兩個區塊的距離  -->
-    <!-- 區塊的邊框用border，寬度(1px)、樣式(solid單實線)(dashed虛線)、顏色 -->
-    <!-- padding:10px文字和邊框的距離 -->
-    <!-- width:400px標籤的寬度 -->
-    <!-- br/可做主動斷行 -->
-    <div class="content">
-        我是<span class="keyword">台南人</span>。<br/>
-        從小在都市長大。</div>
-
-    <!-- 暫時封存<div class="box"></div>     -->
-
-        <h3>均一高中的報告很多</h3>
-        <div class="content">
-           當代藝術、英文報告、<span class="keyword">自主學習</span>等，對學生<span style="position:relative;top:-5px">2</span>造成的壓力不小。
+        <div class="title">我的夢想及志向</div> 
+        <div>國小:科學家、哲學家、外星人研究員</div>  
+        <div>國中:擁有通靈能力、到中科院研發武器</div>
+        <div>高中:進入成功大學電機系或航太系</div>
+        <div></div>   
         </div>
-    <h3>我的照片My Picture</h3>
-    <img src="G11.jpg"width="300"/>
+</div>
+<nav>
+    <div class="logo">小時候是個帥哥</div>
+    <div class="menu">國中是小肥仔</div>
+    <div class="user">來均一變瘦了</div>
+</nav>
+<h3>小時候的我</h3>
+<div style=text-align:center;>
+    <li>去茶山玩</li>
+    <img src="小學.jpg"width="300"/>
+    <li>當KANO的臨時演員</li>
+    <img src="童子軍.jpg"width="300"/>
+    <img src="KANO.jpg"width="300"/>
+    <li>飾演吳建豪的兒子</li>
+    <img src="球愛天空.jpg"width="300"/>
+    <li><a href="http://n.yam.com/Article/20130105114168">(帥到去拍電影)球愛天空</a></li>
+</div>
+<h3>國中長歪的我</h3>
+<div style=text-align:center;>
+    <li>在家裡</li>
+    <img src="摸大金.jpg"width="300"/>
+    <li>澎湖隘門</li>
+    <img src="肥仔.jpg"width="300"/>
+    <li>像一顆球</li>
+</div>
+<h3>高中的我</h3>
+<div style=text-align:center;>
+    <li>在蘭嶼摸小黑狗</li>
+    <img src="摸狗.jpg"width="300"/>
+    <li>志航基地看F-5E</li>
+    <img src="看飛機.jpg"width="300"/>
+    <li>在屏東比籃球</li>
+    <img src="我,籃球.jpg"width="300"/>
+    <img src=""width="300"/>
+</div>
+<!-- "font-weight:bold字體粗;font-size:20px字體大小" -->
+<h3 class="title">我所認識的山上區
+</h3>
+<!--用div會斷行，可改用span -->
+<!--"margin-top:10px;margin-bottom:10px"margin代表兩個區塊的距離  -->
+<!-- 區塊的邊框用border，寬度(1px)、樣式(solid單實線)(dashed虛線)、顏色 -->
+<!-- padding:10px文字和邊框的距離 -->
+<!-- width:400px標籤的寬度 -->
+<!-- br/可做主動斷行 -->
+<div class="content">
+    我雖然是善化人，但我畢業於<span class="keyword">山上國中</span>，因此對於山上區有一定的認識
+    ，近幾年，越來越多人知道<span class="keyword">山上花園水道博物館</span>和<span class="keyword">淨水池區</span>
+    有好吃的也有好玩的</div>
+    
+    <!-- 暫時封存<div class="box"></div>     -->
+    
+    <h3>全台灣唯三的牛墟-善化牛墟</h3>
+    <div class="content">
+        當代藝術、英文報告、<span class="keyword">自主學習</span>等，對學生<span style="position:relative;top:-5px">2</span>造成的壓力不小。
+    </div>
     <hr/>
     <h3>我的影片</h3>  
-    <ul class="video">
-        <li><a href="https://youtu.be/AWwYq_kqlR8">生活科技課拍的短片</a></li>
-        <li><a href="https://youtu.be/jrq3B7OClkk">自製的火箭影片</a></li>
-        <li><a href="https://www.youtube.com/watch?v=e1Noq8N7SWU">攝影課創意廣告</a></li>
-    </ul>
-    <h3>我的IG</h3>
-    <ul class="demo">
-        <li><a href="https://www.instagram.com/morris00577/?hl=zh-tw">Instagram</a></li>
-    </ul>  
+    <div style=text-align:center;>
+        <ul class="video">
+            <li><a href="https://youtu.be/AWwYq_kqlR8">生活科技課拍的短片</a></li>
+            <li><a href="https://youtu.be/jrq3B7OClkk">自製的火箭影片</a></li>
+            <li><a href="https://www.youtube.com/watch?v=e1Noq8N7SWU">攝影課創意廣告</a></li>
+        </ul>
+        <h3>我的IG</h3>
+        <ul class="demo">
+            <li><a href="https://www.instagram.com/morris00577/?hl=zh-tw">Instagram</a></li>
+        </ul>  
+    </div>
     <h3 >MLB BaseBall</h3>
     <!-- border="1" width="400" cellpadding="5" -->
-    <table >
+    <table border="1">
         <tr>
             <td>Name</td>
             <td>Win</td>
@@ -216,10 +240,61 @@ result=data*data
             <td>8</td>
         </tr>
     </table>
+    <div class="head">個人經驗分享
+    </div>
+    
+    <!-- Flex 如何解決:並排(切欄)、水平、垂直對其的問題 -->
+    <!-- RWD回應式設計的關鍵動作:欄位變化
+            Flex如何控制欄位的變化?
+    
+        規劃:
+            1200px以上的規劃:4個，固定尺寸
+            500px~1200px之間的變化:2欄，彈性尺寸
+            500px以下:1欄，彈性尺寸
+    -->
+    <main>
+        <div class="item">故事一:急中生智，逃過考試!<br/>
+            <div>---</div>
+            <div>國小二年級時，我的大腦還在發育，英文單字對我來說就像背文言文一樣難，
+            雖然每次補習班考的單字也才八個，但我就是背不起來-----------------</div>
+            <div>
+            有一天在快要補習時，我連一個單字都背不起來，尤其是eight這個字，我便躲進廁所大便，而當媽媽催我趕快出來時，
+            我說我肚子痛，拉肚子，就這樣僵持了5分鐘，我終於聽到媽媽打電話到補習班，
+            說今天幫我請假，我高興的要命，但由於之後的考試還是零分，就被媽媽藤條伺候了...超痛!</div>
+        </div>
+        <div class="item">故事二:打棒球的樂趣
+            <div>---</div>
+            國小五年級時我在嘉義打棒球，記得那天是星期五的下午，準備放假回家的好日子。下午練完球後，
+            我和一個六年級的學長把球籃放回去貨櫃屋，臨走前隱約聽到了小貓的叫聲，在好奇心的驅使下，發現了兩隻小貓在角落喵喵叫，懷有憐憫之心的我
+            和那位學長各帶一隻貓，藏在衣服裡，駝背走回休息室，小心的將貓藏在case包裡，就這樣躲躲藏藏，終於等到爸爸來接我了，爸爸一看到貓，
+            馬上叫我放回原處，說這種小貓可能還沒斷奶，別亂抱，但是球場早就鎖起來，況且母貓可能會不要
+            沾染人類氣味的幼貓，就這樣我們家多了一隻貓，而那隻貓之後送給了鄰居，過的超爽的。
+    
+        </div>
+        
+        <div class="item">故事三:當我的實驗魂被喚醒
+            <div>
+                <div>---</div>
+                我國小六年級時，爸爸和媽媽常常帶我去小北球場，為在棒球場上奮鬥的哥哥加油。
+                我常常覺得無聊，幸好幾天前用1299元買了一台四軸機，我便在球場旁的草皮上練習飛行。---------------------
+                <div>高速俯衝、懸停、急速爬升、3D翻轉等都玩過後，我便想看看他能飛多高，順便驗證是否能飛到標示上寫的100公尺高。
+                我開始催油門，我看著他越飛越高，越變越小，突然失控了，這就是所謂的空間迷航吧，
+                當我意識到他往住宅區飛去的時候已經來不及救回來了，我的1299元飛走了。</div>
+            </div>
+        </div>
+        <div class="item">故事四:看F-5E
+            <div>---</div>
+            喜歡戰鬥機的我，每次看到戰鬥機飛過天際，都會忍不住抬頭，看是甚麼型號的飛機，
+            正好志航基地離學校不遠，騎腳踏車很快就可以到。
+            沒有近距離看過戰鬥機起飛和下降的我，有時假日會去看飛機，
+            好幾次撲空，但也讓我更珍惜每次看到戰鬥機的機會。
+        </div>
+    </main>
     <h3>和我連絡</h3>
     <div class="content">
-        填寫訊息 <input type="text" /> <button id="btn">送出</button>
+        填寫訊息 <input type="text" /><button id="btn">送出</button>
     </div>
+    
     
 </body>
 </html>
