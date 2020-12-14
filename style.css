@@ -41,11 +41,13 @@ main>.item{
     /* 螢幕尺寸最大值為1200px，也就是小於1200px*/
     @media (max-width:1200px){
         main>.item{
+            text-align:center;
             width:45%;
         }
     }
     @media (max-width:500px){
         main>.item{
+            text-align:center;
             width:90%;
         }
     }
