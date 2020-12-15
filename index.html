@@ -47,6 +47,9 @@ result=data*data
     }
     /* 展示用border:1px solid red;height:100px */
     div.demo{    
+        display:flex;flex-wrap:wrap;
+        justify-content:center;
+        align-items:stretch;
         width:100%;margin-left:auto;margin-right:auto;
     }
     /*顯示模式display:inline-block左右並排，垂直對其上方
@@ -57,6 +60,8 @@ result=data*data
         display:inline-block;vertical-align:top;
         text-align:center;height:150px;line-height:30px;
     }
+    
+
     /* 當使用者的螢幕最大寬度小於600px時˙，套用此設定 */
     /* 手機寬度約320~400px，把主要的底板設成100% */
     @media screen and (max-width:600px){
@@ -74,7 +79,7 @@ result=data*data
     /* class選擇器 */
     .title{font-weight:bold;font-size:20px}
     div.content{
-        width:100%;text-align:center;padding:10px;border:1px dashed blue;margin-top:10px;margin-bottom:10px;
+        width:100%;text-align:center;border:1px dashed blue;margin-top:10px;margin-bottom:10px;
     }
     .keyword{color:red}
     /* absolute絕對定位、relative相對定位(小範圍) */
