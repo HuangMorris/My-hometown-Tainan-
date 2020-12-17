@@ -47,7 +47,7 @@ main>.item{
     }
     @media (max-width:500px){
         main>.item{
-            text-align:center;
+            ;
             width:90%;
         }
     }
