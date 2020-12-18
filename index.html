@@ -68,7 +68,7 @@ result=data*data
         .head{font-size:24px;}
         div.demo{width:100%;text-align:center;}
     }
-    /* 標籤名稱選擇棄 */
+    /* 標籤名稱選擇器 */
     body{
         font-size:16px;font-family:"微軟正黑體"
     }
@@ -93,7 +93,7 @@ result=data*data
         background-color#ffffff;padding:3px;
     }
     /*=虛擬選擇器:搭配其他選擇器使用  */
-    /* :hover當滑鼠一味上去時 */
+    /* :hover當滑鼠移上去時 */
     #btn:hover{
         background-color:#ffffff
     }
@@ -103,10 +103,10 @@ result=data*data
     }
     /* 階層是選擇器:搭配其他選擇器使用 */
     ul.video a{
-      color:#ff00aa
+      color:#ff0000
     }
     .demo a{
-      color:#3700ff
+      color:hsl(293, 100%, 50%)
     }
     /* collapse為崩塌之意，單線 */
     table{
@@ -143,11 +143,13 @@ result=data*data
         <div>家中成員:爸、媽、哥、4隻狗、3隻貓</div>
         <div>16歲、雙魚座、A型</div>
         <div>來自台南市善化區</div>
+        
     </div>
 
     <div class="box">
-        <div class="title">我的興趣及嗜好</div>
-        <div>拍照、彈琴、打球、聽歌</div>
+        <div class="title">我的專長及嗜好</div>
+        <div>有絕對音感</div>
+        <div>拍照、彈鋼琴、打籃球、聽歌</div>
         <div>跟狗、貓玩、觀察人事物</div>
         <div>認識武器、關心時事</div>
     </div>
@@ -196,7 +198,7 @@ result=data*data
     <img src="我,籃球.jpg"width="300"/>
     <img src=""width="300"/>
 </div>
-<h3>我的影片</h3>  
+<h3>我的影片連結</h3>  
 <div style=text-align:center;>
     <ul class="video">
         <li><a href="https://youtu.be/AWwYq_kqlR8">生活科技課製作的短片</a></li>
@@ -219,7 +221,7 @@ result=data*data
     <tr>
         <td> <u>減肥</u></b></td>
         <td>是</td>
-        <td>從83公斤變成73公斤</td>
+        <td>從83公斤變成73公斤。</td>
     </tr>
     <tr>
         <td><u>做好時間管理</u></td>
@@ -228,8 +230,24 @@ result=data*data
     </tr>
 </table>
 <div class="head">我的家鄉特色</div>
+<!-- 暫時封存<div class="box"></div>     -->
+<!-- <span style="position:relative;top:-5px">2</span>平方打法 -->
+<h3>全台唯三的牛墟-善化牛墟</h3>
+<div class="content">
+    <span class="keyword">牛墟</span>帶給我很多的回憶，從小到大，如果週末有牛墟，阿公一定會帶我一起逛。那裡有賣新鮮魚貨、蔬果、五金百貨以及各式各樣的小吃等應有盡有，而且價格都很便宜。
+    <div style=text-align:center;>
+        <img src="水果.jpg"width="300">
+        <img src="菜.jpg"width="300">
+        <img src="牛墟魚.jpg"width="300">
+        <img src="牛墟.jpg"width="300">
+        <img src="魚.jpg"width="300">
+    </div>
+    <div style=text-align:center;>
+        <li><a href="https://www.twtainan.net/zh-tw/attractions/detail/5603">善化牛墟簡介連結</a></li>
+    </div>
+</div>
 <!-- "font-weight:bold字體粗;font-size:20px字體大小" -->
-<h3 class="title">不為人知的山上區
+<h3>不為人知的山上區
 </h3>
 <!--用div會斷行，可改用span -->
 <!--"margin-top:10px;margin-bottom:10px"margin代表兩個區塊的距離  -->
@@ -248,31 +266,32 @@ result=data*data
         當時因台南為僅次台北第二大城市，但飲水不良，疫癘肆虐，衛生設備遠遠落後，所以於1912年興建「台南水道」。台南水道淨水池和台南火車站集水區地位差60.2公尺，利用重力輸送水源。
     </div>
     </div>
-    <li>淨水池區照片</li>
     <div style=text-align:center;>
+        <li>淨水池區照片</li>
     <img src="原水道.jpg"width="300" />
     </div>
     <div style=text-align:center;>
         <li><a href="http://waterworks.tainan.gov.tw/index.php?modify=subject&id=2">博物館區介紹連結</a></li>
     </div>
 </div>
-    
-    <!-- 暫時封存<div class="box"></div>     -->
-    <!-- <span style="position:relative;top:-5px">2</span>平方打法 -->
-    <h3>全台唯三的牛墟-善化牛墟</h3>
-    <div class="content">
-        <span class="keyword">牛墟</span>帶給我很多的回憶，從小到大，如果周末有牛墟，阿公一定會帶我一起逛，那裡有賣新鮮魚貨、蔬果、五金百貨以及各式各樣的小吃等應有盡有，而且價格都很便宜。
-        <div style=text-align:center;>
-            <img src="水果.jpg"width="300">
-            <img src="菜.jpg"width="300">
-            <img src="牛墟魚.jpg"width="300">
-            <img src="牛墟.jpg"width="300">
-            <img src="魚.jpg"width="300">
+<h3>山上國中-傳統藝陣、羊</h3>
+<div class="content">
+    <div>山上國中傳統藝陣:舞獅，多次拿到<span class="keyword">全台南市第一名</span>。</div>
+    <div style=text-align:center;>
+        <img src="關刀.jpg"width="300" />
+        <li>照片中的我擔任關刀手</li>
+        </div>
+    <div>山羊在山上國中是同學們的<span class="keyword">生命教育老師</span>，同學會面臨到山羊的生與死，因此更珍稀當下所擁有的人、事、物。這是上課很難讓青春期的學生了解的。 現在山上國中約有20幾隻山羊，而山羊是由同學組成的羊舍志工來照顧，每天早上放羊，到了中午把羊牽回去，並清理羊舍。</div>
+    <div>想與山羊互動可以來山上國中體驗~</div>
+    <div style=text-align:center;>
+        <img src="山羊.jfif"width="300" />
+        <img src="羊.jpg"width="300" />
         </div>
         <div style=text-align:center;>
-            <li><a href="https://www.twtainan.net/zh-tw/attractions/detail/5603">善化牛墟簡介連結</a></li>
-        </div>
+            <div>更多詳細資料:</div>
+    <li><a href="http://www.ssjh.tn.edu.tw/modules/tadnews/index.php?nsn=2125">校園養羊除草 兼具環保及生命教育</a></li>
     </div>
+</div>
     <div class="head">家裡的貓與狗
     </div>
     <div style=text-align:center;>
@@ -309,9 +328,8 @@ result=data*data
         <img src="難過.jpg"width="300"/>
         <li>虛弱的大金</li>
         <li>2018年12月成為天使</li>
-        
-    <div class="head">我的生命經驗小故事
     </div>
+    <div class="head">我的生命經驗小故事</div>
     
     <!-- Flex 如何解決:並排(切欄)、水平、垂直對其的問題 -->
     <!-- RWD回應式設計的關鍵動作:欄位變化
@@ -324,39 +342,40 @@ result=data*data
     -->
     <main>
         <div class="item">故事一:急中生智，逃過考試!<br/>
-            <div>---</div>
+            <div>~</div>
             <div>國小二年級時，我的大腦還在發育，英文單字對我來說就像背文言文一樣難，
-            雖然每次補習班考的單字也才八個，但我就是背不起來-----------------</div>
+            雖然每次補習班考的單字也才八個，但我就是背不起來...</div>
             <div>
-            有一天在快要補習時，我連一個單字都背不起來，尤其是eight這個字，我便躲進廁所大便，而當媽媽催我趕快出來時，
+            有一天在快要補習時，我連一個單字都背不起來，尤其是eight這個字，我便帶著單字表，躲進廁所大便。而當媽媽催我趕快出來時，
             我說我肚子痛，拉肚子，就這樣僵持了5分鐘，我終於聽到媽媽打電話到補習班，
-            說今天幫我請假，我高興的要命，但由於之後的考試還是零分，就被媽媽藤條伺候了...超痛!</div>
+            說今天幫我請假，我高興的要命，但由於之後的考試還是零分，就被媽媽的藤條伺候了...超痛...</div>
         </div>
         <div class="item">故事二:小貓只是肚子餓
-            <div>---</div>
+            <div>~</div>
             國小五年級時我在嘉義打棒球，記得那天是星期五的下午，準備放假回家的好日子。下午練完球後，
             我和一個六年級的學長把球籃放回去貨櫃屋，臨走前隱約聽到了小貓的叫聲，在好奇心的驅使下，發現了兩隻小貓在角落喵喵叫，懷有憐憫之心的我
             和那位學長各帶一隻貓，放在衣服裡，駝背走回休息室，並將貓藏在case包裡，就這樣躲躲藏藏。終於等到爸爸來接我了，爸爸一看到貓，
-            馬上叫我放回原處，說這種小貓可能還沒斷奶，別亂抱，但是球場早就鎖起來，況且母貓可能會不要
+            馬上叫我放回原處，說這種小貓可能還沒斷奶，別亂抱。但是球場早就鎖起來，況且母貓可能會不要
             沾染人類氣味的幼貓，就這樣我們家多了一隻貓，而那隻貓之後送給了鄰居，過的超爽的。
     
         </div>
         
         <div class="item">故事三:當我的實驗魂被喚醒
             <div>
-                <div>---</div>
+                <div>~</div>
                 我國小六年級時，爸爸和媽媽常常帶我去小北球場，為在棒球場上奮鬥的哥哥加油。
-                我常常覺得無聊，幸好幾天前用1299元買了一台四軸機，我便在球場旁的草皮上練習飛行。---------------------
+                我常常覺得無聊，幸好幾天前用1299元買了一台四軸機，我便在球場旁的草皮上練習飛行。
                 <div>高速俯衝、懸停、急速爬升、3D翻轉等都玩過後，我便想看看他能飛多高，順便驗證是否能飛到標示上寫的100公尺高。
                 我開始催油門，我看著他越飛越高，越變越小，突然失控了，這就是所謂的空間迷航吧，
-                當我意識到他往住宅區飛去的時候已經來不及救回來了，我的1299元飛走了。</div>
+                當我意識到他往住宅區飛去的時候已經來不及救回來了，我的錢飛走了。</div>
             </div>
         </div>
         <div class="item">故事四:大金與我第一次的相遇
-            <div>---</div>
+            <div>~</div>
             國小二年級時，我和媽媽、哥哥在善化夜市的路旁看到一隻黃金獵犬，而有一對情侶在摸他，我看到便過去摸，結果那對情侶就走掉了，原來是一隻流浪狗，
-            之後媽媽叫我該走了，我依依不捨地離開他，走向媽媽的車，當我一開門，那隻黃金獵犬馬上跳進媽媽的車，怎麼也趕不走，之後就載回家了。
-            後來一直在找他的主人，或是將他送養，但最後還是把他留下來，養了他八年之久。
+            之後媽媽叫我該走了，我依依不捨地離開他，走向媽媽的車，當我一開門，那隻黃金獵犬馬上跳進車裡，怎麼也趕不走，之後就載回家了。爸爸知道後非常生氣，因為家裡已經很多條狗了。
+            後來一直在找他的主人，找了好幾個月後才知道，原來牠的主人就住在善化夜市旁邊，是他們棄養的。我們之後不斷的找是否有好心的主人想領養大金，但最後，爸爸決定把大金留了下來。
+            <div>大金共陪了我們八年，並帶給我許多快樂的回憶。</div>
         </div>
     </main>
     <h3>和我連絡</h3>
